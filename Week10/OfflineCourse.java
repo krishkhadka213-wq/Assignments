@@ -9,24 +9,24 @@ package Week10;
  */
 public class OfflineCourse extends Course
 {
-    private double labFee;
+     private double labFee;
     
-    public OfflineCourse(int courseId, String courseName, double baseFee, double labFee)
+    public OfflineCourse(int courseID, String courseName,double baseFee, double labFee)
     {
-    super(courseId, courseName, baseFee);
-    this.labFee = labFee;
+        super(courseID, courseName, labFee);
+        this.labFee= labFee;
+        
     }
     
     @Override
     protected double calculateFee()
-        {
-            return super.getBaseFee() + this.labFee;
-        }
+    {
+        return super.getbaseFee() + this.labFee;
+    }
     
-    public void displayOfflineCourseDetails()
-        {
-            super.displayCourseDetails();
-       System.out.println("Total fee for this online course: " + this.calculateFee());
-    
-        }
+    public void displayCourseDetails()
+    {
+        super.displayCourseDetails();
+        System.out.println("Total Fee for this Offline course:"+ this.calculateFee());
+    }
 }
