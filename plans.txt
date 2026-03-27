@@ -1,0 +1,12 @@
+=== Plan [0] ===
+Model Name    : chatjpt
+Price (NPR)   : 500000.0 per 1 lakh tokens
+Context Window: Well
+Team Slots    : 9 available
+
+=== Plan [1] ===
+Model Name    : hmmgpt
+Price (NPR)   : 500000.0 per 1 lakh tokens
+Context Window: hmm
+Prompts Left  : 89 this month
+
